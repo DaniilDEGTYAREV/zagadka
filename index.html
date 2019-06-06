@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="main">
+		
+		<div class="kto_ya ">
+			<div>
+				<p style="margin-left: 300px">
+				Кто я?
+				</p>
+			</div>	
+			<div class="flex">
+				<div class="otvet">
+				<p class="p">
+					Человек
+				</p>
+			</div>
+			<div class="otvet_1">
+				<p class="p">
+					Никто
+				</p>
+			</div>
+			</div>	
+			
+		</div>
+			
+	</div>
+	<img src="makaka.jpg" style="display: none; width: 100%" class="img"/>
+	<img src="sobaka.jpg" style="display: none; width: 100%;" class="img_1"/>
+	<script type="text/javascript">
+		let main = document.querySelector(".main");
+		let otvet = document.querySelector(".otvet");
+		let otvet_1 = document.querySelector(".otvet_1");
+		let img = document.querySelector(".img");
+		let img_1 = document.querySelector(".img_1");
+			otvet.onclick = function(){
+				img_1.style.display = 'block'
+				main.style.display = 'none'
+			}
+			img_1.onclick = function(){
+				img_1.style.display = 'none'
+				main.style.display = 'block'
+				
+			}
+			otvet_1.onclick = function(){
+				img.style.display = 'block'
+				main.style.display = 'none'
+			}
+			img.onclick = function(){
+				img.style.display = 'none'
+				main.style.display = 'block'
+			}
+	</script>
+</body>
+</html>
